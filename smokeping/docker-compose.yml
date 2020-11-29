@@ -9,8 +9,8 @@ services:
       - PGID=1000
       - TZ=Europe/Berlin
     volumes:
-      - ~/smokeping/config:/config
-      - ~/smokeping/data:/data
+      - /opt/docker/smokeping/config:/config
+      - /opt/docker/smokeping/data:/data
     ports:
       - 8989:80
     restart: unless-stopped
